@@ -14,7 +14,7 @@ export default {
   },
   methods: {
     getOs() {
-      const path = 'http://localhost:5000/';
+      const path = 'http://localhost:5000/json';
       axios.get(path)
         .then((response) => {
           this.os = response.data.platform;

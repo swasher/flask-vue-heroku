@@ -9,11 +9,13 @@ CORS(app)
 
 import os
 
-@app.route('/')
+@app.route('/json')
 def get_os_name():
-    # p = platform.platform()
-    # return jsonify({'platform': p})
+    p = platform.platform()
+    return jsonify({'platform': p})
 
+@app.route('/')
+def index():
     dist_dir = '/app/dist'
     entry = os.path.join(dist_dir, 'index.html')
     return send_file(entry)

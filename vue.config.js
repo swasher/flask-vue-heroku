@@ -3,7 +3,7 @@
 module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
-  // baseUrl: IS_PRODUCTION
+  baseUrl: 'https://test654888.herokuapp.com/static',
   // ? 'http://cdn123.com'
   // : '/',
   // For Production, replace set baseUrl to CDN

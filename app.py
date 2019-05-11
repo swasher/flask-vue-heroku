@@ -13,8 +13,9 @@ import os
 def get_os_name():
     # p = platform.platform()
     # return jsonify({'platform': p})
-    APP_DIR = os.path.dirname(__file__)
-    ROOT_DIR = os.path.dirname(APP_DIR)
-    dist_dir = os.path.join(ROOT_DIR, 'dist')
+    # APP_DIR = os.path.dirname(__file__)
+    # ROOT_DIR = os.path.dirname(APP_DIR)
+    # dist_dir = os.path.join(ROOT_DIR, 'dist')
+    dist = '/app/dist'
     entry = os.path.join(dist_dir, 'index.html')
     return send_file(entry)

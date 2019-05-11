@@ -16,6 +16,6 @@ def get_os_name():
     # APP_DIR = os.path.dirname(__file__)
     # ROOT_DIR = os.path.dirname(APP_DIR)
     # dist_dir = os.path.join(ROOT_DIR, 'dist')
-    dist = '/app/dist'
+    dist_dir = '/app/dist'
     entry = os.path.join(dist_dir, 'index.html')
     return send_file(entry)

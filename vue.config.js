@@ -1,11 +1,11 @@
-// const IS_PRODUCTION = process.env.NODE_ENV === 'production'
+const IS_PRODUCTION = process.env.NODE_ENV === 'production'
 
 module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
-  // baseUrl: 'https://test654888.herokuapp.com/static',
-  // ? 'http://cdn123.com'
-  // : '/',
+  publicPath: IS_PRODUCTION
+    ? 'https://test654888.herokuapp.com/'
+    : '/',
   // For Production, replace set baseUrl to CDN
   // And set the CDN origin to `yourdomain.com/static`
   // Whitenoise will serve once to CDN which will then cache

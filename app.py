@@ -2,7 +2,7 @@ from flask import Flask, jsonify, send_file
 from flask_cors import CORS
 import platform
 
-app = Flask(__name__, static_folder='dist/static')
+app = Flask(__name__, static_folder='dist')
 
 # enable CORS
 CORS(app)

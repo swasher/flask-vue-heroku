@@ -1,29 +1,17 @@
-# flask-vue-heroku
+# Flask Vue.js Heroku
 
-## Project setup
-```
-npm install
-```
+This is a minimal working template for one-button heroku deploy, include:
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+- flask backend
+- vue.js frontend (build with vue-cli-3)
 
-### Compiles and minifies for production
-```
-npm run build
-```
+I wrote [article]() (in russian) about building and structure of this template.
 
-### Run your tests
-```
-npm run test
-```
+## Usage
 
-### Lints and fixes files
-```
-npm run lint
-```
+|One button Installer | [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy) |
+|---------------------|-------------------------------------------------------------------------------------|
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## Thanks
+
+This job inspired by gtalarico [flask-vuejs-template](https://github.com/gtalarico/flask-vuejs-template)

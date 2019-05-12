@@ -2,7 +2,7 @@ from flask import Flask, jsonify, send_file
 from flask_cors import CORS
 import platform
 
-app = Flask(__name__, static_folder='dist/static')
+app = Flask(__name__, static_folder='dist')
 
 # enable CORS
 CORS(app)
@@ -16,5 +16,5 @@ def get_os_name():
 
 @app.route('/')
 def index():
-    index_html = '/app/dist/index.html'
-    return send_file(index_html)
+    vuejs_html = 'app/dist/index.html'
+    return send_file(vuejs_html)

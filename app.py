@@ -16,5 +16,5 @@ def get_os_name():
 
 @app.route('/')
 def index():
-    vuejs_html = 'app/dist/index.html'
+    vuejs_html = '/app/dist/index.html'
     return send_file(vuejs_html)
